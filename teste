@@ -1,1 +1,19 @@
-teste git hub
+vogais = 'AaEeIiOoUu'
+consoantes = 'BbCcDdFfGgHhJjKkLlMmNnPpQqRrSsTtVvWwXxYyZz'
+
+def contagem(frase):
+    cont_vogais = 0
+    cont_consoantes = 0
+    
+    for char in frase:
+        if char in vogais:
+            cont_vogais += 1
+        elif char in consoantes:
+            cont_consoantes += 1
+    
+    return cont_vogais, cont_consoantes
+
+frase = input("digite uma frase: ")
+cont_vogais, cont_consoantes = contagem(frase)
+print("vogais: "{cont_vogais})
+print("consoantes: "{cont_consoantes})
